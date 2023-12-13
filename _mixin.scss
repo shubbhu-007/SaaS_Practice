@@ -1,0 +1,12 @@
+@use "basicProp";
+@mixin flexProp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin theme($theme:green){
+    background-color: $theme;
+    margin-top: basicProp.$mTop;
+    line-height:basicProp.$lHeight;
+    word-spacing:basicProp.$wSpacing;
+}
